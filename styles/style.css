@@ -59,8 +59,7 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
-  width: 1140px;
-  height: 534px;
+  max-width: 1140px;
 }
 
 .result__video-container {
@@ -97,6 +96,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -116,7 +116,7 @@ ol {
   appearance: none;
 }
 
-.search-from__textfield:focus {
+.search-form__textfield:focus {
   outline: none;
 }
 
@@ -157,7 +157,6 @@ ol {
 
 .search-form__label:has(.search-form__checkbox):hover .search-form__label-text {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .button {
